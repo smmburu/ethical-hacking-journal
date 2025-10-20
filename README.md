@@ -10,7 +10,7 @@ This repository is my single source of truth for everything I learn, build, test
 
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-progress-yellow)](https://tryhackme.com)  
 [![WakaTime](https://wakatime.com/badge/user/.svg)](https://wakatime.com)  
-[![GitHub stars](https://img.shields.io/github/stars//ethical-hacking-journal)](https://github.com/smmburu/ethical-hacking-journal/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/smmburu/ethical-hacking-journal)](https://github.com/smmburu/ethical-hacking-journal/stargazers)
 
 ---
 
