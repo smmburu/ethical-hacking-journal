@@ -8,7 +8,7 @@ This repository is my single source of truth for everything I learn, build, test
 ## Badges
 > Replace the placeholders below with your actual account IDs/handles.
 
-[![TryHackMe Badge](https://tryhackme-badges.s3.amazonaws.com/smmburu.png)](https://tryhackme.com/p/smmburu)
+[![TryHackMe: smmburu](https://img.shields.io/badge/TryHackMe-smmburu-yellow)](https://tryhackme.com/p/smmburu)
 [![WakaTime](https://wakatime.com/badge/user/.svg)](https://wakatime.com)  
 [![GitHub stars](https://img.shields.io/github/stars/smmburu/ethical-hacking-journal)](https://github.com/smmburu/ethical-hacking-journal/stargazers)
 
