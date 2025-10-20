@@ -229,8 +229,8 @@ You are free to reuse and adapt the educational scripts and notes — please att
 
 ## Contact & social proof
 - **Owner:** Sam — Nairobi, Kenya  
-- **LinkedIn:** https://linkedin.com/in/  
-- **TryHackMe:** https://tryhackme.com/p/
+- **LinkedIn:** https://linkedin.com/in/isammburu
+- **TryHackMe:** https://tryhackme.com/p/smmburu
 
 ---
 
