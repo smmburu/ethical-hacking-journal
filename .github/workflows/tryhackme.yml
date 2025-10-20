@@ -1,0 +1,17 @@
+name: TryHackMe Stats
+
+on:
+  schedule:
+    - cron: "0 */24 * * *" # runs every 24 hours
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: TryHackMe stats card
+        uses: guilyx/tryhackme-stats@master
+        with:
+          USERNAME: smmburu
