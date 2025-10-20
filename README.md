@@ -12,6 +12,10 @@ This repository is my single source of truth for everything I learn, build, test
 [![WakaTime](https://wakatime.com/badge/user/.svg)](https://wakatime.com)  
 [![GitHub stars](https://img.shields.io/github/stars/smmburu/ethical-hacking-journal)](https://github.com/smmburu/ethical-hacking-journal/stargazers)
 
+## 🕒 WakaTime Stats
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
+
 ---
 
 ## Table of contents
