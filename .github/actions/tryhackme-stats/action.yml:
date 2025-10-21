@@ -1,0 +1,35 @@
+name: TryHackMe stats (local)
+description: Fetch TryHackMe stats and commit results
+inputs:
+  username:
+    description: 'TryHackMe username'
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Fetch TryHackMe data
+      shell: bash
+      run: |
+        set -euo pipefail
+        USERNAME="${{ inputs.username }}"
+        # Adjust endpoint if you need a different resource
+        curl -s "https://tryhackme.com/api/user/${USERNAME}" -o thm_user.json
+        if command -v jq >/dev/null 2>&1; then
+          jq '.' thm_user.json > thm_user_pretty.json || true
+        else
+          cat thm_user.json > thm_user_pretty.json
+        fi
+
+    - name: Commit and push results
+      shell: bash
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add thm_user_pretty.json || true
+        git commit -m "chore: update TryHackMe stats for ${USERNAME}" || echo "no changes to commit"
+        git push || echo "push failed (check workflow permissions)"
