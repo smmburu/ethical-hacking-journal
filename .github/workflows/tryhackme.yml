@@ -2,16 +2,18 @@ name: TryHackMe Stats
 
 on:
   schedule:
-    - cron: "0 */24 * * *" # runs every 24 hours
+    - cron: "0 */12 * * *" # Update every 12 hours
   workflow_dispatch:
 
 jobs:
-  update:
+  generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: TryHackMe stats card
-        uses: guilyx/tryhackme-stats@master
+      - name: Generate TryHackMe Stats
+        uses: lowlighter/metrics@latest
         with:
-          USERNAME: smmburu
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          filename: metrics.svg
+          plugin_tryhackme: yes
+          plugin_tryhackme_user: smmburu
