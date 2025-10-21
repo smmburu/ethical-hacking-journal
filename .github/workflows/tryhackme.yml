@@ -2,18 +2,17 @@ name: TryHackMe Stats
 
 on:
   schedule:
-    - cron: "0 */12 * * *" # Update every 12 hours
+    - cron: "0 */24 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  generate:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate TryHackMe Stats
-        uses: lowlighter/metrics@latest
+      - name: Run TryHackMe stats (local action)
+        uses: ./.github/actions/tryhackme-stats
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          filename: metrics.svg
-          plugin_tryhackme: yes
-          plugin_tryhackme_user: smmburu
+          username: smmburu
