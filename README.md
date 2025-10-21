@@ -16,7 +16,8 @@ This repository is my single source of truth for everything I learn, build, test
 <!--START_SECTION:waka-->
 <!--END_SECTION:waka-->
 
-![TryHackMe Stats](https://github-readme-tryhackme-stats.vercel.app/api?username=smmburu)
+## 🧠 TryHackMe Progress
+![TryHackMe Stats](https://github.com/smmburu/ethical-hacking-journal/blob/main/metrics.svg)
 
 ---
 
